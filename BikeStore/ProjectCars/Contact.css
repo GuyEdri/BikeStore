@@ -1,0 +1,69 @@
+﻿font-family: 'Roboto', sans-serif;
+
+body {
+    background: #D9B280;
+    font-family: "Roboto", sans-serif;
+  
+}
+
+.con {
+    border-style: 1px solid grey;
+    box-shadow: 3px 3px 3px 3px #eee;
+    border-top: 1px solid;
+    opacity: 0.8;
+    background: #FFFFFF;
+    width: 900px;
+    height: 650px;
+    margin: 5% auto;
+    position: relative;
+    text-align: center;
+}
+
+    .container .map {
+        width: 45%;
+        float: left;
+    }
+
+    .con .contact-form {
+        width: 53%;
+        margin-left: 2%;
+        float: right;
+    }
+
+        .con .contact-form .title {
+            font-size: 2.5em;
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            color: #242424;
+            margin: 5% 8%;
+        }
+
+        .con .contact-form .subtitle {
+            font-size: 1.2em;
+            font-weight: 400;
+            margin: 0 4% 5% 8%;
+        }
+
+        .con .contact-form input,
+        .con .contact-form textarea {
+            width: 330px;
+            padding: 3%;
+            margin: 2% 8%;
+            color: gold;
+            border: 1px solid #B7B7B7;
+        }
+
+            .con .contact-form input::placeholder,
+            .con .contact-form textarea::placeholder {
+                color: gold;
+            }
+
+        .con .contact-form .btn-send {
+            background: #A383C9;
+            width: 180px;
+            height: 60px;
+            color: #FFFFFF;
+            font-weight: 700;
+            margin: 2% 8%;
+            border: none;
+        }
