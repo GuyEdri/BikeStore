@@ -18,8 +18,7 @@ namespace ProjectCars
         protected void BtnLogin_Click(object sender, EventArgs e)
         {
             string sql = $"select * from Users where UserName='{UserName.Text}' and UserPass='{UserPass.Text}'";
-            string Connstr = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\גיא\Documents\BikesDB.mdf; Integrated Security = True; Connect Timeout = 30";
-            SqlConnection Conn = new SqlConnection(Connstr);
+            string Connstr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|BikesDB.mdf;Integrated Security=True; Connect Timeout = 30"; SqlConnection Conn = new SqlConnection(Connstr);
             Conn.Open();
             SqlCommand Cmd = new SqlCommand(sql, Conn);
             SqlDataReader Dr = Cmd.ExecuteReader();

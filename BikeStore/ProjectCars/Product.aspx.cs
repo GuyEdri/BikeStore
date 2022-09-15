@@ -13,7 +13,7 @@ namespace ProjectCars
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string Connstr = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\גיא\Documents\BikesDB.mdf; Integrated Security = True; Connect Timeout = 30";
+            string Connstr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|BikesDB.mdf;Integrated Security=True; Connect Timeout = 30";
             SqlConnection Sqpro = new SqlConnection();
             Sqpro.ConnectionString = Connstr;
             Sqpro.Open();

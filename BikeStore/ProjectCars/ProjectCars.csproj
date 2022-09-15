@@ -150,6 +150,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Add2Cart.aspx" />
+    <Content Include="App_Data\BikesDB.mdf" />
+    <Content Include="App_Data\BikesDB_log.ldf">
+      <DependentUpon>BikesDB.mdf</DependentUpon>
+    </Content>
     <Content Include="Connected Services\ServiceReference1\ProjectCars.ServiceReference1.DebitResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -319,7 +323,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="biz\pelecard\ws101\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />

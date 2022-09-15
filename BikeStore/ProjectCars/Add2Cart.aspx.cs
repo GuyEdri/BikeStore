@@ -26,8 +26,7 @@ namespace ProjectCars
                 c = (Cart)Session["Cart"];
             }
 
-            string Conpro = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\גיא\Documents\BikesDB.mdf; Integrated Security = True; Connect Timeout = 30";
-            SqlConnection Sqpro = new SqlConnection();
+            string Conpro = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|BikesDB.mdf;Integrated Security=True; Connect Timeout = 30"; SqlConnection Sqpro = new SqlConnection();
             Sqpro.ConnectionString = Conpro;
 
             Sqpro.Open();
